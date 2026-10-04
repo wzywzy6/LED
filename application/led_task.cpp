@@ -10,7 +10,7 @@ extern "C" void led_task()
   while (true) {
     for (uint8_t g = 0; g < 10; g++) {
       led.set(0, g * 0.01f, 0);
-      osDelay(100);
+      osDelay(200);
     }
 
     for (uint8_t g = 10; g > 0; g--) {
